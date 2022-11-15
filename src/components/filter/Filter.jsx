@@ -5,11 +5,11 @@ const Filter = () => {
   return (
     <div className={styles.filter}>
       <label className={`${styles.title} mb-1`}>ค้นหา </label>
-      <select>
+      <select className='outline'>
         <option defaultChecked="true">ปี ค.ศ.</option>
         <option>ค.ศ. 1902</option>
       </select>
-      <select>
+      <select className='outline'>
         <option>หมวดหมู่</option>
         <option>เคมี</option>
         <option>วิทยาศาสตร์เศรษฐกิจ</option>

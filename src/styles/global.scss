@@ -55,12 +55,6 @@ select {
   border: 1px solid $primary;
   background-color: $secondary;
   color: $primary;
-
-  &:hover {
-    border: 1px solid $secondary;
-    background-color: $primary;
-    color: $secondary;
-  }
 }
 a,
 button,
@@ -71,4 +65,42 @@ input {
 
 label {
   display: block;
+}
+
+.card-chemistry {
+  background-color: $chemistry;
+}
+.card-economic {
+  background-color: $economic;
+}
+.card-literature {
+  background-color: $literature;
+}
+.card-peace {
+  background-color: $peace;
+}
+.card-physics {
+  background-color: $physics;
+}
+.card-medicine {
+  background-color: $medicine;
+}
+
+.color-chemistry {
+  color: $chemistry;
+}
+.color-economic {
+  color: $economic;
+}
+.color-literature {
+  color: $literature;
+}
+.color-peace {
+  color: $peace;
+}
+.color-physics {
+  color: $physics;
+}
+.color-medicine {
+  color: $medicine;
 }

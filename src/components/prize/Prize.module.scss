@@ -1,0 +1,44 @@
+@import "../../styles/variables.scss";
+
+.prize {
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 16px 16px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  .title {
+    .category {
+      float: left;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .awardYear {
+      float: right;
+      font-size: 18px;
+      font-weight: lighter;
+    }
+  }
+  .laureateName {
+    clear: both;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  .motivation {
+    font-size: 16px;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    height: 130px;
+  }
+  .categoryType {
+    position: absolute;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    font-size: 14px;
+    bottom: 0;
+    border-radius: 0px 20px 8px 8px;
+  }
+}
