@@ -1,12 +1,13 @@
 @import "../../styles/variables.scss";
 
 .detail {
-  width: 80%;
-  display: inline-block;
-  margin-left: 30px;
+  position: absolute;
+  right: 0;
+  margin-left: $filterWidth;
+  padding: 20px;
   height: 100%;
-  .prizeTitle {
-  }
-  .awardYear {
+  .detailRow {
+    width: 100%;
+    margin-right: 20px;
   }
 }

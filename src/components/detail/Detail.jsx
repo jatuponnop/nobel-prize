@@ -1,6 +1,7 @@
 import React from 'react'
 import Prize from '../prize/Prize'
 import styles from "./Detail.module.scss"
+import { Container, Col, Row } from 'react-bootstrap'
 
 const Detail = () => {
   let prize = {
@@ -37,19 +38,21 @@ const Detail = () => {
   let prize4 = { ...prize, category: "Medicine" };
   return (
     <div className={styles.detail}>
-      <div className="row">
-        <div className="col-6">
-          <Prize prize={prize} />
-        </div>
-        <div className="col-6">
-          <Prize prize={prize2} />
-        </div>
-        <div className="col-6">
-          <Prize prize={prize3} />
-        </div>
-        <div className="col-6">
-          <Prize prize={prize4} />
-        </div>
+      <div className={styles.detailRow}>
+        <Row>
+          <Col lg={4} md={6} sm={12}>
+            <Prize prize={prize} />
+          </Col>
+          <Col lg={4} md={6} sm={12}>
+            <Prize prize={prize2} />
+          </Col>
+          <Col lg={4} md={6} sm={12}>
+            <Prize prize={prize3} />
+          </Col>
+          <Col lg={4} md={6} sm={12}>
+            <Prize prize={prize4} />
+          </Col>
+        </Row>
       </div>
     </div>
   )

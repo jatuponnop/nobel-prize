@@ -4,12 +4,16 @@ import styles from "./Filter.module.scss";
 const Filter = () => {
   return (
     <div className={styles.filter}>
-      <label className={`${styles.title} mb-1`}>ค้นหา </label>
-      <select className='outline'>
-        <option defaultChecked="true">ปี ค.ศ.</option>
+      <label className={`${styles.title} mb-2`}>ค้นหา </label>
+      <select>
+        <option defaultChecked="true">ตั้งแต่ปี</option>
         <option>ค.ศ. 1902</option>
       </select>
-      <select className='outline'>
+      <select>
+        <option defaultChecked="true">จนถึงปี</option>
+        <option>ค.ศ. 1902</option>
+      </select>
+      <select>
         <option>หมวดหมู่</option>
         <option>เคมี</option>
         <option>วิทยาศาสตร์เศรษฐกิจ</option>
@@ -18,7 +22,7 @@ const Filter = () => {
         <option>ฟิสิกส์</option>
         <option>สรีรวิทยา/การแพทย์</option>
       </select>
-      <button className='btn'>ค้นหา</button>
+      <button className='btn-nobel outline'>ค้นหา</button>
       <div className={styles.prizeAmount}>
         <label className={styles.prizeAmountText}>
           จำนวนรางวัล
