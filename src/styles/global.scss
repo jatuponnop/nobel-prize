@@ -7,3 +7,68 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  height: 80vh;
+  margin-top: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 5px;
+}
+.mb-2 {
+  margin-bottom: 10px;
+}
+
+select {
+  border-radius: 6px;
+  padding: 4px 8px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: 0px;
+  background-color: $primary;
+  color: $secondary;
+  border: 1px solid $secondary;
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 4px 8px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: 0px;
+  border: 1px solid $secondary;
+  background-color: $primary;
+  color: $secondary;
+  transition: 0.2s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.outline {
+  border: 1px solid $primary;
+  background-color: $secondary;
+  color: $primary;
+
+  &:hover {
+    border: 1px solid $secondary;
+    background-color: $primary;
+    color: $secondary;
+  }
+}
+a,
+button,
+select,
+input {
+  cursor: pointer;
+}
+
+label {
+  display: block;
+}
