@@ -38,22 +38,20 @@ const Detail = () => {
   let prize4 = { ...prize, category: "Medicine" };
   return (
     <div className={styles.detail}>
-      <div className={styles.detailRow}>
-        <Row>
-          <Col lg={4} md={6} sm={12}>
-            <Prize prize={prize} />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <Prize prize={prize2} />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <Prize prize={prize3} />
-          </Col>
-          <Col lg={4} md={6} sm={12}>
-            <Prize prize={prize4} />
-          </Col>
-        </Row>
-      </div>
+      <Row className={styles.detailRow} >
+        <Col lg={4} md={6} sm={12} className={styles.detailCol}>
+          <Prize prize={prize} />
+        </Col>
+        <Col lg={4} md={6} sm={12} className={styles.detailCol}>
+          <Prize prize={prize2} />
+        </Col>
+        <Col lg={4} md={6} sm={12} className={styles.detailCol}>
+          <Prize prize={prize3} />
+        </Col>
+        <Col lg={4} md={6} sm={12} className={styles.detailCol}>
+          <Prize prize={prize4} />
+        </Col>
+      </Row>
     </div>
   )
 }
