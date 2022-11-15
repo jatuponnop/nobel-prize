@@ -4,16 +4,16 @@ import styles from "./Filter.module.scss";
 const Filter = () => {
   return (
     <div className={styles.filter}>
-      <label className={`${styles.title} mb-2`}>ค้นหา </label>
-      <select>
+      <label className={`${styles.title} mb-2`}>รางวัล </label>
+      <select className='outline'>
         <option defaultChecked="true">ตั้งแต่ปี</option>
         <option>ค.ศ. 1902</option>
       </select>
-      <select>
+      <select className='outline'>
         <option defaultChecked="true">จนถึงปี</option>
         <option>ค.ศ. 1902</option>
       </select>
-      <select>
+      <select className='outline'>
         <option>หมวดหมู่</option>
         <option>เคมี</option>
         <option>วิทยาศาสตร์เศรษฐกิจ</option>
@@ -31,7 +31,7 @@ const Filter = () => {
           150,782
         </label>
       </div>
-      <img src="nobel-prize.png" className={styles.img} />
+      <img src="https://cdn-icons-png.flaticon.com/512/2132/2132061.png" className={styles.img} />
     </div>
   )
 }

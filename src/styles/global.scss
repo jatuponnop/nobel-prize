@@ -12,19 +12,15 @@ body {
   overflow: hidden;
 }
 
-.container {
-  width: 100% !important;
-  height: 100vh;
-  margin: 0 !important;
-  margin-top: 20px;
-  padding: 0 !important;
-}
-
 .mb-1 {
   margin-bottom: 5px;
 }
 .mb-2 {
   margin-bottom: 10px;
+}
+
+.no-hover {
+  cursor: default !important;
 }
 
 select {
@@ -38,6 +34,7 @@ select {
   background-color: $primary;
   color: $secondary;
   border: 1px solid $secondary;
+  text-overflow: ellipsis;
 }
 
 .btn-nobel {
