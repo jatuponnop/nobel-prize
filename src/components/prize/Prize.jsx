@@ -19,7 +19,7 @@ const getPrizeThaiName = (symbol) => {
 }
 
 const formatName = (category) => {
-  return category;
+  return "Nobel Prize in " + category;
 }
 
 const Prize = ({ prize: { category, symbol, categoryFullName, awardYear, laureate } }) => {
