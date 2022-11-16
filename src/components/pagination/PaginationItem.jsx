@@ -13,7 +13,9 @@ const PaginationItem = ({ page }) => {
     dispatch(setPage(page));
   }
   return (
-    <span className={`${page == pageNow ? styles.selected : ""}`} onClick={selectPage} >{page}</span>
+    <div className={styles.number}>
+      <span className={`${page == pageNow ? styles.selected : ""}`} onClick={selectPage} >{page}</span>
+    </div>
   )
 }
 

@@ -20,7 +20,7 @@ const Prize = ({ prize: { category, symbol, categoryFullName, awardYear, laureat
       </label>
 
       <label className={`${styles.categoryType} color-${symbol.toLowerCase()}`}>
-        ประเภท: {category.en}
+        หมวดหมู่: {category.en}
       </label>
     </div>
   )
