@@ -21,6 +21,9 @@ const Pagination = () => {
       start = ((divide - 1) * listPerPage) + 1;
     }
     let end = (start + listPerPage) - 1;
+    if (end > maxPage) {
+      end = maxPage;
+    }
     for (let i = start; i <= end; i++) {
       pages.push(<PaginationItem key={i} page={i} />)
     }

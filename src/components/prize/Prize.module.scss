@@ -7,14 +7,20 @@
   color: white;
   border-radius: 8px;
   position: relative;
+  height: 280px;
   .title {
-    .category {
+    .categoryWrapper {
       float: left;
-      font-size: 18px;
-      font-weight: bold;
+      width: 80%;
+      .category {
+        font-size: 18px;
+        font-weight: bold;
+      }
     }
     .awardYear {
-      float: right;
+      position: absolute;
+      padding-right: 16px;
+      right: 0;
       font-size: 18px;
       font-weight: lighter;
     }
@@ -25,12 +31,20 @@
     font-size: 14px;
     font-weight: lighter;
   }
+  .motivationWrapper {
+    display: flex;
+    height: 100px;
+    /* border: 3px solid green;*/
+    margin-top: 100px;
+    margin-right: 20px;
+    overflow: hidden;
+    top: 0;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+  }
   .motivation {
     font-size: 16px;
-    padding: 40px 20px;
-    text-align: center;
-    margin-bottom: 30px;
-    height: 130px;
   }
   .categoryType {
     position: absolute;
