@@ -1,14 +1,12 @@
 import React from 'react'
 import Prize from '../prize/Prize'
 import styles from "./Detail.module.scss"
-import { Container, Col, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import Pagination from '../pagination/Pagination'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { filterPrizes } from '../../functions/helper'
-import { setPrizeAmount } from '../../redux/prizes'
 
 const Detail = () => {
-  const dispatch = useDispatch();
   const allPrizes = useSelector((state) => state.prizes.prizes);
   const page = useSelector((state) => state.prizes.page);
   let prizes = filterPrizes(page, allPrizes);

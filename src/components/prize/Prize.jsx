@@ -18,13 +18,17 @@ const getPrizeThaiName = (symbol) => {
   return "-";
 }
 
+const formatName = (category) => {
+  return category;
+}
+
 const Prize = ({ prize: { category, symbol, categoryFullName, awardYear, laureate } }) => {
   return (
     <div className={`${styles.prize} card-${symbol.toLowerCase()}`}>
       <div className={styles.title}>
         <div className={styles.categoryWrapper}>
           <label className={styles.category}>
-            {categoryFullName.en}
+            {formatName(category.en)}
           </label>
         </div>
         <label className={styles.awardYear}>
@@ -39,9 +43,6 @@ const Prize = ({ prize: { category, symbol, categoryFullName, awardYear, laureat
           {laureate.motivation}
         </label>
       </div>
-
-
-
       <label className={`${styles.categoryType} color-${symbol.toLowerCase()}`}>
         <span className=''> สาขา:</span> <span className='light'> {getPrizeThaiName(symbol)}</span>
       </label>

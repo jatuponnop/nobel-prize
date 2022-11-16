@@ -43,6 +43,7 @@ const Pagination = () => {
     }
   }
 
+
   return (
     <div className={styles.pagination}>
       <div className={styles.wrapper}>

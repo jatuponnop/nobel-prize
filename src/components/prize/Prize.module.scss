@@ -12,9 +12,13 @@
     .categoryWrapper {
       float: left;
       width: 80%;
+      white-space: nowrap;
       .category {
         font-size: 18px;
         font-weight: bold;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
       }
     }
     .awardYear {
@@ -46,6 +50,8 @@
     .motivation {
       margin-right: 20px;
       font-size: 14px;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
   .categoryType {

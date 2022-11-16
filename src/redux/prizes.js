@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   year: "none",
+  allPrizes: [],
   prizes: [],
   page: 1,
   prizeAmount: 0
@@ -15,7 +16,6 @@ const prizesSlice = createSlice({
     },
     setPrizes: (state, action) => {
       state.prizes = action.payload;
-      setPrizeAmount(50);
     },
     resetPrizes: (state, action) => {
       state.prizes = [];
@@ -25,9 +25,12 @@ const prizesSlice = createSlice({
     },
     setPrizeAmount: (state, action) => {
       state.prizeAmount = action.payload;
-    }
+    },
+    setAllPrizes: (state, action) => {
+      state.allPrizes = action.payload;
+    },
   }
 });
 
-export const { setYear, setPrizes, resetPrizes, setPage, setPrizeAmount } = prizesSlice.actions;
+export const { setYear, setPrizes, resetPrizes, setPage, setPrizeAmount, setAllPrizes } = prizesSlice.actions;
 export default prizesSlice.reducer;
